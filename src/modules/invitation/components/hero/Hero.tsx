@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
                 <span className="hero__message">¡Nos Graduamos!</span>
                 <h1 className="hero__title">Enfermería</h1>
                 <div className="hero__divider"></div>
-                <p className="hero__date">Julio 10, 2026</p>
+                <p className="hero__date">Diciembre 10, 2026</p>
                 <p className="hero__location">Aguascalientes, Ags</p>
             </div>
 

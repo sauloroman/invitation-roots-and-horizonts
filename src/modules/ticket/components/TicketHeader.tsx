@@ -15,7 +15,7 @@ export const TicketHeader: React.FC = () => {
                     <i className="bx bx-calendar-event ticket__detail-icon" />
                     <div className="ticket__detail-text">
                         <span className="ticket__detail-label">Fecha</span>
-                        <span className="ticket__detail-value">10 de Julio de 2026 &mdash; 08:00 P.M.</span>
+                        <span className="ticket__detail-value">10 de Diciembre de 2026 &mdash; 08:00 P.M.</span>
                     </div>
                 </div>
 

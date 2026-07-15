@@ -18,7 +18,7 @@ export const Farewell: React.FC = () => {
                         <p className='farewell__school'>
                             <span>10</span>
                             <span className="farewell__dot"></span>
-                            <span>Julio</span>
+                            <span>Diciembre</span>
                             <span className="farewell__dot"></span>
                             <span>2026</span>
                         </p>
