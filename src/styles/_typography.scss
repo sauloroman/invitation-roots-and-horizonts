@@ -1,0 +1,35 @@
+@use 'variables.scss' as *;
+
+@font-face {
+    font-family: 'Brittany';
+    src: url('../assets/fonts/Brittany.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halimunde';
+    src: url('../assets/fonts/Halimunde Signature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: $font-tertiary, serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-secondary, serif;
+}
+
+a {
+    text-decoration: none;
+}

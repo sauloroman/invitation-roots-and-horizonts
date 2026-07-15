@@ -1,0 +1,95 @@
+.guest {
+    padding: 1rem;
+    background-color: $color-bg-dark;
+
+    &__container {
+        color: $color-neutral-50;
+        position: relative;
+    }
+
+    &__frame {
+        width: 100%;
+        margin: auto;
+        opacity: .8;
+        object-fit: cover;
+    }
+
+    &__content {
+        width: 55%;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+    }
+
+    &__header {
+        span {
+            color: $color-neutral-700 !important;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    &__name {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: 3rem;
+
+        p {
+            color: $color-neutral-700;
+            font-family: $font-secondary;
+            margin-bottom: 1.2rem;
+        }
+
+        span {
+            display: inline-block;
+            color: $color-secondary-600;
+            font-family: $font-halimunde;
+            font-size: 2.4rem;
+            line-height: 1.7;
+        }
+    }
+
+    &__message {
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.01em;
+        margin-bottom: 2rem;
+        color: $color-neutral-600;
+        text-align: center;
+    }
+
+    &__button {
+        margin: 2rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+
+        button {
+            width: 100%;
+            font-weight: 500;
+            font-size: 1rem;
+            color: $color-neutral-600;
+            border: 1px solid currentColor;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            gap: 1rem;
+            background-color: transparent;
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            color: $color-primary-500;
+            background-color: $color-neutral-500;
+        }
+    }
+
+}

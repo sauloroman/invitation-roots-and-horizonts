@@ -1,0 +1,108 @@
+.itinerary {
+    overflow: clip;
+    position: relative;
+    touch-action: pan-y;
+
+    &__container {
+        margin-top: -2rem;
+    }
+
+    &__content {
+        background-color: $color-bg-dark;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__header {
+        background-color: $color-bg-dark;
+        padding-bottom: 3rem;
+    }
+
+    &__frame {
+        width: 90%;
+        margin: 0 auto;
+        opacity: .8;
+        filter: brightness(.85)
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        height: 60%;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    &__time {
+        font-family: $font-secondary;
+        font-size: 1.3rem;
+        color: $color-secondary-500;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: 1.2rem;
+        color: $color-neutral-900;
+        font-weight: 500;
+    }
+
+    &__location {
+        font-family: $font-tertiary;
+        font-size: 1.1rem;
+        color: $color-neutral-600;
+        font-style: italic;
+    }
+
+    &__bola {
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+
+        &--plateada {
+            bottom: -12%;
+            left: -5%;
+
+            img {
+                opacity: .9;
+                transform: rotate(20deg);
+                width: 20rem;
+            }
+        }
+
+        &--dorada {
+            bottom: -20%;
+            right: 0%;
+
+            img {
+                opacity: .8;
+                transform: rotate(-20deg);
+                width: 17rem;
+            }
+        }
+
+
+    }
+
+}
