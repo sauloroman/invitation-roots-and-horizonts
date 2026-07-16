@@ -6,7 +6,7 @@ import { ScrollReveal } from '@/common/components/ScrollReveal/ScrollReveal'
 import { useTicket } from '@/modules/ticket/hooks/useTicket'
 
 import './_search.scss'
-import { GraduationCapIcon, TicketIcon } from '@phosphor-icons/react'
+import { GraduationCapIcon, TicketIcon, KeyIcon } from '@phosphor-icons/react'
 
 interface TicketSearch {
     keyPass: string
@@ -49,6 +49,14 @@ export const Search: React.FC = () => {
                                     })}
                                     className='search__input' id='keyPass' type="text" placeholder='Ej. 1234' />
                                 <span className='search__input-error'>{errors.keyPass?.message}</span>
+
+                                <div className="search__badge">
+                                    <KeyIcon className="search__badge-icon" />
+                                    <div className="search__badge-text">
+                                        <span className="search__badge-label">PRUEBA INGRESANDO CON LA CLAVE:</span>
+                                        <strong className="search__badge-code">prueba123</strong>
+                                    </div>
+                                </div>
                             </div>
                             <button disabled={isLoading} className='search__button'>
                                 <TicketIcon />
@@ -61,3 +69,4 @@ export const Search: React.FC = () => {
         </section>
     )
 }
+
